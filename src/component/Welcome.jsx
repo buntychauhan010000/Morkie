@@ -18,13 +18,18 @@ function Welcome() {
         <Swiper
           modules={[Autoplay, FreeMode]}
           slidesPerView={"auto"}
-          spaceBetween={360}
+          breakpoints={{
+            0: { spaceBetween: 20 }, // small screens
+            640: { spaceBetween: 200 }, // tablets
+            1024: { spaceBetween: 360 }, // desktops
+          }}
           freeMode={true}
           loop={true}
           speed={5000}
           autoplay={{
             delay: 0,
             disableOnInteraction: false,
+            pauseOnMouseEnter: false,
           }}
           allowTouchMove={false}
           grabCursor={false}
