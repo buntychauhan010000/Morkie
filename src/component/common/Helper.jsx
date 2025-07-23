@@ -25,48 +25,58 @@ export const nftItems = [
     title: "Cosmic Serenity III 🌈",
     price: "25 MATIC",
     image: card1,
+    chain: "Polygon",
   },
   {
     title: "Bera N Breeze ❄️",
     price: "1 BERA",
     image: card2,
+    chain: "Berachain",
   },
   {
     title: "My Story 🦋",
     price: "0.05 IP",
     image: card3,
+    chain: "Taiko",
   },
   {
     title: "Story Iliad ✨",
     price: "0.1 IP",
     image: card4,
+    chain: "Taiko",
   },
   {
     title: "Butterfly on ZORA 🦋",
     price: "0 ETH",
     image: card5,
+    chain: "Superchain",
   },
   {
     title: "Bera Market 📄",
     price: "1 BERA",
     image: card6,
+    chain: "Berachain",
   },
   {
     title: "Cosmic Serenity II 🌈",
     price: "25 MATIC",
     image: card7,
+    chain: "Polygon",
   },
   {
     title: "Morkie Zero",
     price: "10 MATIC",
     image: card8,
+    chain: "Polygon",
   },
   {
     title: "Bera Farm 🧠",
     price: "0.1 BERA",
     image: card9,
+    chain: "Berachain",
   },
 ];
+
 export const steps = [
   {
     icon: <FaWallet size={28} />,

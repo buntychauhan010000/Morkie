@@ -24,7 +24,7 @@ function LimitedCollection() {
           <PrimaryButton label={"Read more.."} />
         </div>
         <div className=" md:w-1/2 flex justify-center">
-          <img src={limited} alt="" />
+          <img src={limited} alt="limited" />
         </div>
       </div>
     </div>

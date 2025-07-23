@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { nftItems } from "./common/Helper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -8,9 +8,16 @@ import NFTFilters from "./common/NFTFilters";
 import NFTCard from "./common/NFTCard";
 
 function NFTGallery() {
+  const [selectedChain, setSelectedChain] = useState("All");
+
   useEffect(() => {
     AOS.init({ duration: 1000, once: true });
   }, []);
+
+  const filteredItems =
+    selectedChain === "All"
+      ? nftItems
+      : nftItems.filter((item) => item.chain === selectedChain);
 
   return (
     <div
@@ -29,15 +36,15 @@ function NFTGallery() {
         </div>
 
         {/* Filters */}
-        <div data-aos="fade-left" data-aos-delay="300">
-          <NFTFilters />
+        <div data-aos="fade-left" data-aos-delay="100">
+          <NFTFilters selected={selectedChain} onChange={setSelectedChain} />
         </div>
       </div>
 
       {/* Grid for md and above */}
       <div className="hidden md:grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 transition duration-500">
-        {nftItems.map((item, index) => (
-          <div key={index} data-aos="zoom-in" data-aos-delay={index * 100}>
+        {filteredItems.map((item, index) => (
+          <div key={index} data-aos="zoom-in" data-aos-delay={index * 10}>
             <NFTCard item={item} />
           </div>
         ))}
@@ -46,9 +53,9 @@ function NFTGallery() {
       {/* Swiper Slider for below md */}
       <div className="md:hidden">
         <Swiper spaceBetween={20} slidesPerView={1.1} grabCursor={true}>
-          {nftItems.map((item, index) => (
+          {filteredItems.map((item, index) => (
             <SwiperSlide key={index}>
-              <div data-aos="fade-up" data-aos-delay={index * 100}>
+              <div data-aos="fade-up" data-aos-delay={index * 10}>
                 <NFTCard item={item} />
               </div>
             </SwiperSlide>

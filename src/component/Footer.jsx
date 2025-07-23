@@ -16,9 +16,27 @@ function Footer() {
             everyone.
           </p>
           <div className="flex gap-4 text-lg">
-            <FaInstagram className="hover:text-purple-400 cursor-pointer" />
-            <FaFacebookF className="hover:text-purple-400 cursor-pointer" />
-            <FaLinkedinIn className="hover:text-purple-400 cursor-pointer" />
+            <a
+              href="https://instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaInstagram className="hover:text-purple-400 cursor-pointer" />
+            </a>
+            <a
+              href="https://facebook.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaFacebookF className="hover:text-purple-400 cursor-pointer" />
+            </a>
+            <a
+              href="https://linkedin.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaLinkedinIn className="hover:text-purple-400 cursor-pointer" />
+            </a>
           </div>
         </div>
 
@@ -31,10 +49,26 @@ function Footer() {
                 Morkie
               </h3>
               <ul className="space-y-2 text-sm text-gray-300">
-                <li>About</li>
-                <li>Contact</li>
-                <li>Support</li>
-                <li>List on Morkie</li>
+                <li>
+                  <a href="#about" className="hover:text-purple-400">
+                    About
+                  </a>
+                </li>
+                <li>
+                  <a href="#contact" className="hover:text-purple-400">
+                    Contact
+                  </a>
+                </li>
+                <li>
+                  <a href="#support" className="hover:text-purple-400">
+                    Support
+                  </a>
+                </li>
+                <li>
+                  <a href="#list-on-morkie" className="hover:text-purple-400">
+                    List on Morkie
+                  </a>
+                </li>
               </ul>
             </div>
 
@@ -44,10 +78,26 @@ function Footer() {
                 Resources
               </h3>
               <ul className="space-y-2 text-sm text-gray-300">
-                <li>Docs</li>
-                <li>Invest</li>
-                <li>Taiko</li>
-                <li>Brandkit</li>
+                <li>
+                  <a href="#docs" className="hover:text-purple-400">
+                    Docs
+                  </a>
+                </li>
+                <li>
+                  <a href="#invest" className="hover:text-purple-400">
+                    Invest
+                  </a>
+                </li>
+                <li>
+                  <a href="#taiko" className="hover:text-purple-400">
+                    Taiko
+                  </a>
+                </li>
+                <li>
+                  <a href="#brandkit" className="hover:text-purple-400">
+                    Brandkit
+                  </a>
+                </li>
               </ul>
             </div>
 
@@ -57,10 +107,46 @@ function Footer() {
                 Community
               </h3>
               <ul className="space-y-2 text-sm text-gray-300">
-                <li>Twitter</li>
-                <li>Telegram</li>
-                <li>Discord</li>
-                <li>Galxe</li>
+                <li>
+                  <a
+                    href="https://twitter.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-purple-400"
+                  >
+                    Twitter
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://telegram.org"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-purple-400"
+                  >
+                    Telegram
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://discord.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-purple-400"
+                  >
+                    Discord
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://galxe.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-purple-400"
+                  >
+                    Galxe
+                  </a>
+                </li>
               </ul>
             </div>
           </div>
@@ -71,10 +157,12 @@ function Footer() {
       <div className="border-t border-gray-700 mt-10 pt-4 text-sm text-gray-400 flex flex-col md:flex-row justify-between items-center">
         <p>© Copyright 2024, All Rights Reserved by Morkie</p>
         <div className="flex gap-4 mt-2 md:mt-0">
-          <span className="hover:text-purple-400 cursor-pointer">Terms</span>
-          <span className="hover:text-purple-400 cursor-pointer">
+          <a href="#terms" className="hover:text-purple-400">
+            Terms
+          </a>
+          <a href="#privacy-policy" className="hover:text-purple-400">
             Privacy Policy
-          </span>
+          </a>
         </div>
       </div>
     </footer>
