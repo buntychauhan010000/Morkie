@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+
 import dimand from "../assets/img/dimand.png";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, FreeMode } from "swiper/modules";
@@ -8,9 +8,6 @@ import "swiper/css";
 import "swiper/css/free-mode";
 
 function Welcome() {
-  useEffect(() => {
-    AOS.init({ duration: 1000, once: true });
-  }, []);
 
   return (
     <div className="bg-gradient-purple py-3 my-15 sm:my-20">

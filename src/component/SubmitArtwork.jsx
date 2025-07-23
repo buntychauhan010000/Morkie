@@ -1,12 +1,9 @@
-import React, { useEffect } from "react";
+
 import artworkImg from "../assets/img/Sphere.png";
-import AOS from "aos";
+
 import "aos/dist/aos.css";
 
 function SubmitArtwork() {
-  useEffect(() => {
-    AOS.init({ duration: 1000, once: true });
-  }, []);
 
   return (
     <div className="bg-black w-full px-4 py-8 sm:py-12 flex justify-center  md:my-20">

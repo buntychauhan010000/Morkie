@@ -4,7 +4,7 @@ function NFTCard({ item }) {
   return (
     <article className="group space-y-2">
       <div
-        className="relative overflow-hidden transition-all duration-500 border-purple border p-5 space-y-4 rounded-xl shadow min-h-[500px] flex flex-col justify-between bg-white/5 hover:bg-none hover:scale-95"
+        className="relative overflow-hidden transition-all duration-500 border-purple border p-5 space-y-2 sm:space-y-4 rounded-xl shadow min-h-[500px] flex flex-col justify-between bg-white/5 hover:bg-none hover:scale-95"
         style={{
           background: "rgba(255,255,255,0.05)",
           transition: "all 0.4s ease-in-out",

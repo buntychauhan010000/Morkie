@@ -42,9 +42,9 @@ function Footer() {
 
         {/* Links Section */}
         <div className="md:col-span-3">
-          <div className="flex flex-col sm:flex-row sm:justify-between gap-8">
+          <div className="flex flex-row sm:justify-between gap-8">
             {/* Morkie Links */}
-            <div className="sm:w-1/3">
+            <div className="w-1/3">
               <h3 className="font-semibold text-white mb-3 font-Saira">
                 Morkie
               </h3>
@@ -73,7 +73,7 @@ function Footer() {
             </div>
 
             {/* Resources Links */}
-            <div className="sm:w-1/3">
+            <div className="w-1/3">
               <h3 className="font-semibold text-white mb-3 font-Saira">
                 Resources
               </h3>
@@ -102,7 +102,7 @@ function Footer() {
             </div>
 
             {/* Community Links */}
-            <div className="sm:w-1/3">
+            <div className="w-1/3">
               <h3 className="font-semibold text-white mb-3 font-Saira">
                 Community
               </h3>
@@ -155,7 +155,7 @@ function Footer() {
 
       {/* Footer Bottom */}
       <div className="border-t border-gray-700 mt-10 pt-4 text-sm text-gray-400 flex flex-col md:flex-row justify-between items-center">
-        <p>© Copyright 2024, All Rights Reserved by Morkie</p>
+        <p>© Copyright 2025, All Rights Reserved by Morkie</p>
         <div className="flex gap-4 mt-2 md:mt-0">
           <a href="#terms" className="hover:text-purple-400">
             Terms

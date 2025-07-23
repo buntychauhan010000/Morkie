@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { nftItems } from "./common/Helper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-import AOS from "aos";
+
 import "aos/dist/aos.css";
 import NFTFilters from "./common/NFTFilters";
 import NFTCard from "./common/NFTCard";
@@ -10,10 +10,7 @@ import NFTCard from "./common/NFTCard";
 function NFTGallery() {
   const [selectedChain, setSelectedChain] = useState("All");
 
-  useEffect(() => {
-    AOS.init({ duration: 1000, once: true });
-  }, []);
-
+ 
   const filteredItems =
     selectedChain === "All"
       ? nftItems
@@ -22,7 +19,7 @@ function NFTGallery() {
   return (
     <div
       id="passport"
-      className="container mx-auto px-3 text-white py-8 md:px-10"
+      className="container mx-auto px-3 text-white  md:px-10"
     >
       <div className="flex flex-col lg:flex-row justify-between items-center">
         {/* Heading */}

@@ -1,10 +1,10 @@
-import React, { useRef, useEffect, useState } from "react";
+import React, { useRef } from "react";
 import LimitedCollection from "./common/LimitedCollection";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
-import AOS from "aos";
+
 import "aos/dist/aos.css";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -12,12 +12,7 @@ import "swiper/css/navigation";
 function Exclusive() {
   const prevRef = useRef(null);
   const nextRef = useRef(null);
-  const [swiperReady, setSwiperReady] = useState(false);
 
-  useEffect(() => {
-    AOS.init({ duration: 1000, once: true });
-    setSwiperReady(true);
-  }, []);
 
   return (
     <div
@@ -43,7 +38,7 @@ function Exclusive() {
       </div>
 
       {/* Swiper with AOS */}
-      {swiperReady && (
+    
         <Swiper
           modules={[Navigation]}
           navigation={{
@@ -68,7 +63,7 @@ function Exclusive() {
             <LimitedCollection />
           </SwiperSlide>
         </Swiper>
-      )}
+
     </div>
   );
 }

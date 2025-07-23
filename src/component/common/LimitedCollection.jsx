@@ -4,7 +4,7 @@ import limited from "../../assets/img/limited.png";
 
 function LimitedCollection() {
   return (
-    <div className="relative w-full p-3 sm:p-8 rounded-2xl overflow-hidden border border-purple text-white mt-10  bg-[#221023]">
+    <div className="relative w-full p-3  sm:p-8 rounded-2xl overflow-hidden border border-purple text-white mt-10  bg-[#221023]">
       {/* Blurred Background Overlay */}
       <div className="absolute inset-0  opacity-80 backdrop-blur-md -z-10"></div>
 

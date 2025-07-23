@@ -79,25 +79,25 @@ export const nftItems = [
 
 export const steps = [
   {
-    icon: <FaWallet size={28} />,
+    icon: <FaWallet />,
     title: "Set up your wallet",
     description:
       "Once you've set up your wallet of choice, connect it by clicking the wallet icon easily.",
   },
   {
-    icon: <SiHiveBlockchain size={28} />,
+    icon: <SiHiveBlockchain />,
     title: "Choose Your NFT",
     description:
       'Check collections and click "Mint" to mint an NFT. There are multiple NFTs to mint.',
   },
   {
-    icon: <GiCardExchange size={28} />,
+    icon: <GiCardExchange />,
     title: "Add Your NFT",
     description:
       "You can import your NFT into your wallet. Collect the contract address and token ID.",
   },
   {
-    icon: <FaGifts size={28} />,
+    icon: <FaGifts />,
     title: "Earn Rewards",
     description:
       "Most of the NFTs come with exclusive benefits. You can earn extra rewards for minting.",

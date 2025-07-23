@@ -1,12 +1,8 @@
-import React, { useEffect } from "react";
-import AOS from "aos";
+
 import "aos/dist/aos.css";
 import StepFlow from "./common/StepFlow";
 
 function OwnNFTs() {
-  useEffect(() => {
-    AOS.init({ duration: 1000, once: true });
-  }, []);
 
   return (
     <div className="container mx-auto py-8 px-3">
