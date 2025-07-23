@@ -15,7 +15,7 @@ function NFTGallery() {
   return (
     <div
       id="passport"
-      className="container mx-auto px-3 text-white py-10 md:px-10"
+      className="container mx-auto px-3 text-white py-8 md:px-10"
     >
       <div className="flex flex-col lg:flex-row justify-between items-center">
         {/* Heading */}

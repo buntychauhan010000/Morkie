@@ -9,7 +9,7 @@ function OwnNFTs() {
   }, []);
 
   return (
-    <div className="container mx-auto px-3">
+    <div className="container mx-auto py-8 px-3">
       <div className="text-center">
         <p className="text-5xl font-Saira font-bold mb-2" data-aos="fade-down">
           How to Mint Your Own NFTs

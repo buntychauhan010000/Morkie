@@ -13,7 +13,7 @@ function Welcome() {
   }, []);
 
   return (
-    <div className="bg-gradient-purple py-3 my-20" data-aos="fade-up">
+    <div className="bg-gradient-purple py-3 my-15 sm:my-20">
       <div>
         <Swiper
           modules={[Autoplay, FreeMode]}
