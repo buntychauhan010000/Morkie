@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import "tailwindcss";
+
+body {
+    background: #040104;
+    color: white;
+    font-family: "Inter",
+        sans-serif;
+
+}
+
+body html {
+    overflow-x: hidden;
+}
+
+.bg-hero {
+    background-image: url(../src/assets/img/Herosection.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+}
+
+
+@theme {
+    --tracking-h-500: 500px;
+    /* font-size */
+    --text-heading-64: 64px;
+    /* color */
+    --color-light-blue: #92B5F3;
+    --color-purple-dark: #040104;
+     --color-purple: #A413AE;
+
+    /* font - family */
+    --font-Saira: "Saira Condensed",
+        sans-serif;
+    --font-Inter: "Inter",
+        sans-serif;
+}
+
+.bg-gradient-purple {
+    background: linear-gradient(225.05deg, #68246D -0.02%, #EE00FF 97.43%);
+}
+
+/* .custom-container {
+    max-width: 1140px;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin: 0 auto;
+} */
+
+.menu_btn {
+    height: 1px;
+    display: flex;
+    width: 10px;
+    background-color: white;
+}
+
+.button_gap {
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+.nav_items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    margin-left: 20px;
+    background-color: #68246D;
+    height: calc(100vh - 100px);
+    width: 100%;
+    position: fixed;
+    left: -20px;
+    bottom: 0;
+}
+
+html,
+body {
+    position: relative;
+    height: 100%;
+}
+
+.swiper-slide:nth-child(1n) {
+    border-radius: 20px;
+}
+
+button {
+    cursor: pointer;
+}
+
+.bg-custom-gradient {
+    background: linear-gradient(225.05deg,
+            rgba(104, 36, 109, 0.06) -0.02%,
+            rgba(238, 0, 255, 0.06) 97.43%);
+}
