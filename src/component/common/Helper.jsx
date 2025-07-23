@@ -15,10 +15,10 @@ import { SiHiveBlockchain } from "react-icons/si";
 import { GiCardExchange } from "react-icons/gi";
 
 export const navlink = [
-  { name: "Explore" },
-  { name: "Passport" },
-  { name: "Profile" },
-  { name: "Docs" },
+  { name: "Explore", href: "#explore" },
+  { name: "Passport", href: "#passport" },
+  { name: "Profile", href: "#profile" },
+  { name: "Docs", href: "#docs" },
 ];
 export const nftItems = [
   {

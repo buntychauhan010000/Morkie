@@ -13,7 +13,10 @@ function NFTGallery() {
   }, []);
 
   return (
-    <div className="container mx-auto px-3 text-white py-10 md:px-10">
+    <div
+      id="passport"
+      className="container mx-auto px-3 text-white py-10 md:px-10"
+    >
       <div className="flex flex-col lg:flex-row justify-between items-center">
         {/* Heading */}
         <div className="text-center lg:text-start mb-8" data-aos="fade-right">

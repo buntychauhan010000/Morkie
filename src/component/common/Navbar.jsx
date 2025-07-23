@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import logo from "../../assets/img/logo.png";
-import { navlink } from "./Helper";
 import PrimaryButton from "./PrimaryButton";
 import { HiMenu, HiX } from "react-icons/hi";
 import NavItems from "./NavItems";
@@ -41,7 +40,7 @@ function Navbar() {
 
       {/* Mobile Menu */}
       {isMenuOpen && (
-        <article className="lg:hidden fixed top-0 left-0 w-full h-full bg-purple-dark flex flex-col items-center justify-center space-y-6 px-6 py-8">
+        <article className="lg:hidden top-0 left-0 w-full h-dvh bg-purple-dark flex flex-col items-center justify-start space-y-6 px-6 py-8">
           {/* Close Button Inside */}
           <button
             onClick={() => setIsMenuOpen(false)}
@@ -52,7 +51,7 @@ function Navbar() {
 
           {/* Nav Links */}
           <ul className="flex flex-col gap-6 items-center">
-          <NavItems />
+            <NavItems closeMenu={() => setIsMenuOpen(false)} />
           </ul>
 
           {/* Buttons */}

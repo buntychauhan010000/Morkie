@@ -10,7 +10,7 @@ function Hero() {
   }, []);
 
   return (
-    <div className="bg-hero md:h-[60vh] lg:h-[80vh] xl:h-dvh">
+    <div id="profile" className="bg-hero md:h-[60vh] lg:h-[80vh] xl:h-dvh">
       <div className="bg-overlay-layer" />
       <div className="relative z-10">
         <div data-aos="fade-down">

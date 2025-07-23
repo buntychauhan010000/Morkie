@@ -4,7 +4,7 @@ import logo from "../assets/img/logo.png";
 
 function Footer() {
   return (
-    <footer className="container px-3 mx-auto py-10">
+    <footer id="docs" className="container px-3 mx-auto py-10">
       <div className="grid gap-10 sm:grid-cols-1 md:grid-cols-4">
         {/* Brand Section */}
         <div className="md:col-span-1">

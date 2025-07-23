@@ -20,7 +20,10 @@ function Exclusive() {
   }, []);
 
   return (
-    <div className="container mx-auto px-3 py-8 sm:py-10 md:py-20 relative">
+    <div
+      id="explore"
+      className="container mx-auto px-3 py-8 sm:py-10 md:py-20 relative"
+    >
       {/* Heading */}
       <p
         data-aos="fade-right"
@@ -58,16 +61,10 @@ function Exclusive() {
           <SwiperSlide className="px-5">
             <LimitedCollection />
           </SwiperSlide>
-          <SwiperSlide
-            className="px-5"
-     
-          >
+          <SwiperSlide className="px-5">
             <LimitedCollection />
           </SwiperSlide>
-          <SwiperSlide
-            className="px-5"
-
-          >
+          <SwiperSlide className="px-5">
             <LimitedCollection />
           </SwiperSlide>
         </Swiper>

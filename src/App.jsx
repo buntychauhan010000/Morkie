@@ -8,6 +8,7 @@ import Submit from "./component/SubmitArtwork";
 import Welcome from "./component/Welcome";
 
 function App() {
+
   return (
     <>
       <Hero />
