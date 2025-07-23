@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import logo from "../../assets/img/logo.png";
 import PrimaryButton from "./PrimaryButton";
 import { HiMenu, HiX } from "react-icons/hi";
@@ -6,6 +6,23 @@ import NavItems from "./NavItems";
 
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  // Add overflow-hidden to body and html when menu is open
+  useEffect(() => {
+    if (isMenuOpen) {
+      document.body.classList.add("overflow-hidden");
+      document.documentElement.classList.add("overflow-hidden");
+    } else {
+      document.body.classList.remove("overflow-hidden");
+      document.documentElement.classList.remove("overflow-hidden");
+    }
+
+    // Cleanup on unmount just in case
+    return () => {
+      document.body.classList.remove("overflow-hidden");
+      document.documentElement.classList.remove("overflow-hidden");
+    };
+  }, [isMenuOpen]);
 
   return (
     <nav className="relative z-50">

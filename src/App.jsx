@@ -11,13 +11,15 @@ function App() {
 
   return (
     <>
-      <Hero />
-      <Exclusive />
-      <NFTGallery />
-      <Welcome />
-      <OwnNFTs />
-      <Submit />
-      <Footer />
+      <div className="overflow-x-hidden">
+        <Hero />
+        <Exclusive />
+        <NFTGallery />
+        <Welcome />
+        <OwnNFTs />
+        <Submit />
+        <Footer />
+      </div>
     </>
   );
 }
