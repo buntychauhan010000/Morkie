@@ -15,9 +15,21 @@ function Hero() {
       <div className="relative z-10">
         <div>
           <img className="absolute opacity-50" src={star} alt="" />
-          <img className="absolute hidden lg:w-3/5 xl:w-1/2 lg:flex right-0 opacity-40" src={line} alt="" />
-          <img className="absolute right-5 opacity-40" src={Ellipse} alt="" />
-          <img className="absolute top-0 -left-10 opacity-40" src={Ellipse2} alt="" />
+          <img
+            className="absolute hidden lg:w-3/5 xl:w-1/2 lg:flex right-0 opacity-40"
+            src={line}
+            alt=""
+          />
+          <img
+            className="absolute right-5 opacity-40 hidden sm:flex"
+            src={Ellipse}
+            alt=""
+          />
+          <img
+            className="absolute top-0 -left-10 opacity-40 hidden sm:flex"
+            src={Ellipse2}
+            alt=""
+          />
         </div>
         <div data-aos="fade-down">
           <Navbar />

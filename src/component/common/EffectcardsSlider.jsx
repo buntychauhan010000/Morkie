@@ -9,7 +9,7 @@ import { cards } from "./Helper";
 function EffectcardsSlider() {
   return (
     <div
-      className=" w-full flex justify-center items-start overflow-visible
+      className=" w-full flex justify-center items-start overflow-visible 
       "
     >
       <Swiper
@@ -20,7 +20,7 @@ function EffectcardsSlider() {
         style={{
           perspective: "15000px",
           transformStyle: "preserve-3d",
-          backdropFilter: "blur(500px)",
+
         }}
       >
         {cards.map((card, index) => (
