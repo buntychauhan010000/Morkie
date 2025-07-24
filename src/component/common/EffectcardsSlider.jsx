@@ -20,12 +20,12 @@ function EffectcardsSlider() {
         style={{
           perspective: "15000px",
           transformStyle: "preserve-3d",
-          backdropFilter: "blur(100px)",
+          backdropFilter: "blur(500px)",
         }}
       >
         {cards.map((card, index) => (
           <SwiperSlide key={index}>
-            <article className="w-full h-full  overflow-hidden shadow-2xl scale-[1.03] rotate-[-2deg]">
+            <article className="w-full h-full  overflow-hidden scale-[1.03] rotate-[-2deg]">
               {/* CARD IMAGE */}
               <img
                 src={card.img}
